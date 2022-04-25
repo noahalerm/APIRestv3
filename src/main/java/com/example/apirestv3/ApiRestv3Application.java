@@ -13,7 +13,7 @@ public class ApiRestv3Application {
 
     @GetMapping
     public String welcome() {
-        return "Welcome to APIRestv3";
+        return "Welcome to API Rest v3";
     }
 
     @GetMapping("/user")
@@ -21,8 +21,8 @@ public class ApiRestv3Application {
         System.out.println("username: " + principal.getName());
         return principal;
     }
+
     public static void main(String[] args) {
         SpringApplication.run(ApiRestv3Application.class, args);
     }
-
 }
